@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:background="@drawable/background_login"
+        android:layout_width="match_parent"
+        android:paddingBottom="5dp"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="5dp"
+            >
+            <RelativeLayout
+                android:id="@+id/l1"
+                android:background="@drawable/relative_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:paddingLeft="10dp"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/imglogo"
+                    android:src="@drawable/ic_launcher_background"
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:scaleType="centerCrop"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/colorPrimaryDark"/>
+                <TextView
+                    android:textColor="#006468"
+                    android:id="@+id/namalengkap"
+                    android:textSize="10sp"
+                    android:paddingLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama"
+                    android:layout_toRightOf="@+id/imglogo"/>
+                <TextView
+                    android:textColor="#006468"
+                    android:id="@+id/tgllahir"
+                    android:paddingLeft="15dp"
+                    android:textSize="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal Lahir"
+                    android:layout_toRightOf="@+id/imglogo"
+                    android:layout_below="@+id/namalengkap"/>
+                <TextView
+                    android:textColor="#006468"
+                    android:id="@+id/tempatlahir"
+                    android:paddingLeft="15dp"
+                    android:textSize="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tempat Lahir"
+                    android:layout_toRightOf="@+id/imglogo"
+                    android:layout_below="@+id/tgllahir"/>
+                <TextView
+                    android:textColor="#006468"
+                    android:id="@+id/rtrw"
+                    android:paddingLeft="15dp"
+                    android:textSize="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RT/RW Dusun"
+                    android:layout_toRightOf="@+id/imglogo"
+                    android:layout_below="@+id/tempatlahir"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>

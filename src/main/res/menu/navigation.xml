@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="General">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_dash"
+                    android:icon="@drawable/ic_outline_dashboard_24"
+                    android:title="Dashboard" />
+                <item
+                    android:id="@+id/nav_panduan"
+                    android:icon="@drawable/ic_outline_assignment_24"
+                    android:title="Panduan" />
+                <item
+                    android:id="@+id/nav_berita"
+                    android:icon="@drawable/ic_baseline_bookmark_border_24"
+                    android:title="Berita" />
+                <item
+                    android:id="@+id/nav_akun"
+                    android:icon="@drawable/ic_outline_account_circle_24"
+                    android:title="Akun" />
+
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_baseline_power_settings_new_24"
+                    android:title="Keluar" />
+
+                <item
+                    android:id="@+id/nav_tentang"
+                    android:icon="@drawable/ic_outline_info_24"
+                    android:title="Tentang" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Lainya">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_outline_share_24"
+                android:title="Bagikan" />
+            <item
+                android:id="@+id/nav_bug"
+                android:icon="@drawable/ic_outline_bug_report_24"
+                android:title="Laporkan Masalah" />
+        </menu>
+    </item>
+
+</menu>
